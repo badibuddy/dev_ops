@@ -25,17 +25,17 @@ class ApiTestCase(unittest.TestCase):
     # We are checking that the responses are not the values we have provided
     # ie NOT {'hello' : 'Badi'} for HelloWorld
     # and NOT the value we shall provide for Pi to 5 decimal places
-    def test_hello_fail(self):
-        tester = app.test_client(self)
-        response = tester.get('/')
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(json.loads(response.data), {'hello': 'Badi'})
+#    def test_hello_fail(self):
+#        tester = app.test_client(self)
+#        response = tester.get('/')
+#        self.assertEqual(response.status_code, 200)
+#        self.assertEqual(json.loads(response.data), {'hello': 'Badi'})
 
-    def test_pi_fail(self):
-        tester = app.test_client(self)
-        response = tester.get('/5')
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(json.loads(response.data), {"5 Decimals": "3.14"})
+#    def test_pi_fail(self):
+#        tester = app.test_client(self)
+#        response = tester.get('/5')
+#        self.assertEqual(response.status_code, 200)
+#        self.assertEqual(json.loads(response.data), {"5 Decimals": "3.14"})
 
 if __name__ == '__main__':
     unittest.main()
