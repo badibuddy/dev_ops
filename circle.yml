@@ -5,7 +5,7 @@ machine:
     PROJECT_NAME: personal-157308
     CLUSTER_NAME: linux-a
     CLOUDSDK_COMPUTE_ZONE: us-central1-c
-    HOME: /home/badi_weru
+    HOME: /root
 dependencies:
   override:
     - pip install flask
