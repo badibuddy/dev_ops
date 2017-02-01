@@ -3,7 +3,7 @@ machine:
     version: 2.7.3
   environment:
     PROJECT_NAME: personal-157308
-    CLUSTER_NAME: linux-b
+    CLUSTER_NAME: linux-a
     CLOUDSDK_COMPUTE_ZONE: us-central1-c
     HOME: /home/badi_weru
 dependencies:
