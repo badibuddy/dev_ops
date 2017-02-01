@@ -6,9 +6,6 @@ machine:
     CLUSTER_NAME: linux-b
     CLOUDSDK_COMPUTE_ZONE: us-central1-c
 
-services:
-    - docker
-
 dependencies:
   override:
     - pip install flask
