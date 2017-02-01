@@ -14,7 +14,6 @@ dependencies:
     - pip install flask
     - pip install flask-restful
 
-dependencies:
   pre:
     - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update
     - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update kubectl
